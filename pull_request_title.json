@@ -1,0 +1,15 @@
+{
+  "LABEL": {
+    "name": "",
+    "color": "#B60205"
+  },
+  "CHECKS": {
+    "regexp": "^(feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert): \\S.{10,70}$",
+    "ignoreLabels": []
+  },
+  "MESSAGES": {
+    "success": "Pull request title is OK",
+    "failure": "Pull request title is invalid",
+    "notice": ""
+  }
+}

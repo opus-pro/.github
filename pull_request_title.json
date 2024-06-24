@@ -4,7 +4,7 @@
     "color": "#B60205"
   },
   "CHECKS": {
-    "regexp": "^(feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert): \\S.{10,70}$",
+    "regexp": "^(feat|hotfix|fix|docs|style|refactor|perf|test|chore|build|ci|revert): \\S.{10,70}$",
     "ignoreLabels": []
   },
   "MESSAGES": {

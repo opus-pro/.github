@@ -6,8 +6,7 @@ _❗️❗️❗️Please include a summary of the change❗️❗️❗️_
 
 > General guidelines of code changes.
 
-- [ ] Control large/key change in Feature Gate [go/fg](https://app.golinks.io/fg).
-- [ ] Added requested reviewers for large PR.
+- [ ] Control large/key change in [Statsig](https://console.statsig.com/4sUpC1PiirzDCW9A2KiuFf).
 
 ## Tests
 
@@ -19,8 +18,7 @@ _❗️❗️❗️Please include a summary of the change❗️❗️❗️_
 
 > snapshots or gifs (if interaction is the majority of the change)
 
-- [ ] Added screenshots
-- [ ] This feature doesn't involve any UI change
+- [ ] Added screenshots or this feature doesn't involve any UI change
 
 ## Tips for code reviews
 

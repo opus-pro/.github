@@ -6,7 +6,7 @@ _❗️❗️❗️Please include a summary of the change❗️❗️❗️_
 
 > General guidelines of code changes.
 
-- [ ] Control large/key change in [Statsig](https://console.statsig.com/4sUpC1PiirzDCW9A2KiuFf).
+- [ ] Control large/key change in [Statsig](https://console.statsig.com/).
 
 ## Tests
 

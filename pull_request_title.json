@@ -9,7 +9,7 @@
   },
   "MESSAGES": {
     "success": "Pull request title is OK",
-    "failure": "Pull request title is invalid",
+    "failure": "Pull request title is invalid. Regex: /^(feat|hotfix|fix|docs|style|refactor|perf|test|chore|build|ci|revert): \\S.{10,70}$/",
     "notice": ""
   }
 }

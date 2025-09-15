@@ -4,12 +4,12 @@
     "color": "#B60205"
   },
   "CHECKS": {
-    "regexp": "^(\\[.+?\\] )?(feat|hotfix|fix|docs|style|refactor|perf|test|chore|build|ci|revert): \\S.{10,70}$",
+    "regexp": "^(\\[[^\\]]+\\] )?(feat|hotfix|fix|docs|style|refactor|perf|test|chore|build|ci|revert): [a-z](?!.*  )(?!.*--).{7,68}[^. ]$",
     "ignoreLabels": []
   },
   "MESSAGES": {
     "success": "Pull request title is OK",
-    "failure": "Pull request title is invalid. Regex: /^(\\[.+?\\] )?(feat|hotfix|fix|docs|style|refactor|perf|test|chore|build|ci|revert): \\S.{10,70}$/",
+    "failure": "Pull request title is invalid. Requirements: 1) Use lowercase type 2) Single space after colon 3) Lowercase first letter 4) 8-70 chars total 5) No ending period 6) No double spaces 7) No double dashes. Regex: /^(\\[[^\\]]+\\] )?(feat|hotfix|fix|docs|style|refactor|perf|test|chore|build|ci|revert): [a-z](?!.*  )(?!.*--).{7,68}[^. ]$/",
     "notice": ""
   }
 }

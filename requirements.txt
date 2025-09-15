@@ -1,0 +1,6 @@
+# No external dependencies required for the PR title validation test
+# The test script only uses Python standard library modules:
+# - re (regular expressions)
+# - json (JSON parsing)
+# - sys (system functions)
+# - pathlib (path handling)

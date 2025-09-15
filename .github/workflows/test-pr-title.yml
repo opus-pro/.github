@@ -1,0 +1,41 @@
+---
+name: 🧪 Test Validation
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  test-pr-title-regex:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Run PR title validation tests
+      run: |
+        echo "Running PR title validation tests..."
+        python3 test_pr_title.py -v
+
+    - name: Test results summary
+      run: |
+        echo "✅ All PR title validation tests passed!"
+        echo ""
+        echo "The regex correctly validates PR titles with these rules:"
+        echo "1. ✅ Type must be lowercase (feat, fix, docs, etc.)"
+        echo "2. ✅ Single space after colon (not double spaces)"
+        echo "3. ✅ First letter after colon must be lowercase"
+        echo "4. ✅ Title length must be 8-70 characters total"
+        echo "5. ✅ Cannot end with period"
+        echo "6. ✅ Cannot contain double spaces anywhere"
+        echo "7. ✅ Cannot contain double dashes (--)"

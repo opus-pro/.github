@@ -2,6 +2,10 @@
 
 _❗️❗️❗️Please include a summary of the change❗️❗️❗️_
 
+1. **Why**: Why you create this Pull Request? What's the situation before this Pull Request?
+2. **How**: Is this Pull Request single purpose? How do you plan this PR overall?
+3. **What**: What's the most important change in this PR? How to describe the change in one sentence? (That should be the title)
+
 ## Checklist
 
 > General guidelines of code changes.

@@ -41,6 +41,9 @@ class PRTitleValidationTest(unittest.TestCase):
             # Double spaces after colon
             "feat:  enhance",
             "refactor: director don't  output result",
+            "[hook-scripts] fix: fix hook-scripts object  (#2948)",
+            "feat: trailing space ",
+            "feat: double trailing space  ",
 
             # Uppercase type or first letter
             "Feat: blabla",

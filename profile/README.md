@@ -5,8 +5,8 @@
 &nbsp;
 
 [![opus.pro](https://img.shields.io/badge/%F0%9F%8C%90%20opus.pro-6723FF?style=for-the-badge)](https://www.opus.pro)
-[![Try OpusClip](https://img.shields.io/badge/%F0%9F%8E%AC%20Try%20OpusClip-238636?style=for-the-badge)](https://www.opus.pro)
-[![AgentOpus](https://img.shields.io/badge/%F0%9F%A4%96%20AgentOpus-BE717B?style=for-the-badge)](https://www.opus.pro)
+[![OpusClip API](https://img.shields.io/badge/%F0%9F%8E%AC%20OpusClip%20API-238636?style=for-the-badge)](https://www.opus.pro/api)
+[![AgentOpus](https://img.shields.io/badge/%F0%9F%A4%96%20AgentOpus-BE717B?style=for-the-badge)](https://www.opus.pro/agent)
 [![Hiring](https://img.shields.io/badge/%F0%9F%92%BC%20We're%20hiring-D29922?style=for-the-badge)](https://jobs.ashbyhq.com/opusclip)
 
 </div>

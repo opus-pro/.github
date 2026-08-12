@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           fetch-depth: 0
       - name: Skip check for dependabot
         if: ${{ github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]' }}
         run: echo "Skipping PR basics check for dependabot." && exit 0
-      - uses: thehanimo/pr-title-checker@v1.4.2
+      - uses: thehanimo/pr-title-checker@1d8cd483a2b73118406a187f54dca8a9415f1375 # v1.4.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           configuration_path: pull_request_title.json

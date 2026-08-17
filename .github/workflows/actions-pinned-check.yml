@@ -13,11 +13,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read # actions/checkout needs this to fetch a private repo
+  contents: read # actions/checkout
 
 jobs:
   check:
-    runs-on: opus-runner-standard
+    # This repo is public, so the gate must stay on a hosted runner: a fork PR
+    # runs untrusted code, and self-hosted runners would execute it on our own
+    # infrastructure. The check is shell-only and needs nothing a hosted runner
+    # lacks. https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access#self-hosted-runner-security-with-public-repositories
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:

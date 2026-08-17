@@ -22,4 +22,6 @@ jobs:
       - uses: thehanimo/pr-title-checker@1d8cd483a2b73118406a187f54dca8a9415f1375 # v1.4.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          configuration_path: pull_request_title.json
+          # The config lives in this repo, so read it off the checkout above
+          # rather than through the contents API, which this job cannot reach.
+          local_configuration_path: pull_request_title.json

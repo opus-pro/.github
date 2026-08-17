@@ -22,4 +22,8 @@ jobs:
       - uses: thehanimo/pr-title-checker@1d8cd483a2b73118406a187f54dca8a9415f1375 # v1.4.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          configuration_path: pull_request_title.json
+          # Read the config off the checkout, not the contents API: the org's IP
+          # allow list rejects API calls from GitHub-hosted runners ("your IP
+          # address is not permitted"), which failed this gate on every PR.
+          # LABEL.name is empty, so this is the action's only API call.
+          local_configuration_path: pull_request_title.json
